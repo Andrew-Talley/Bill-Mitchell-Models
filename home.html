@@ -1,0 +1,347 @@
+<!--<!DOCTYPE html>-->
+<html>
+	<head>
+		<title>Bill Mitchell Models</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans" rel="stylesheet">
+		<meta name="description" content="Election Predictions based on Bill Mitchell's Tweets" />
+		
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+		
+        <link rel="stylesheet" type="text/css" href="css.css">
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+            window.onload = function() {
+                makeChart([{"category": "Oct 1","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 2","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 3","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 4","column-1": 98.9,"column-2": 1.1},
+                        {"category": "Oct 5","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 6","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 7","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 8","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 9","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 10","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 11","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 12","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 13","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 14","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 15","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 16","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 17","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 18","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 19","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 20","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 21","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 22","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 23","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 24","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 25","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 26","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 27","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 28"},
+                        {"category": "Oct 29"},
+                        {"category": "Oct 30"},
+                        {"category": "Oct 31"},
+                        {"category": "Nov 1"},
+                        {"category": "Nov 2"},
+                        {"category": "Nov 3"},
+                        {"category": "Nov 4"},
+                        {"category": "Nov 5"},
+                        {"category": "Nov 6"},
+                        {"category": "Nov 7"},
+                        {"category": "Nov 8"},
+                        {"category": "Nov 9"}
+                    ]);
+                document.getElementById("masks").onclick = function() {
+                    makeChart([{"category": "Oct 1","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 2","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 3","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 4","column-1": 98.9,"column-2": 1.1},
+                        {"category": "Oct 5","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 6","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 7","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 8","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 9","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 10","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 11","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 12","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 13","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 14","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 15","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 16","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 17","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 18","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 19","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 20","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 21","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 22","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 23","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 24","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 25","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 26","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 27","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 28"},
+                        {"category": "Oct 29"},
+                        {"category": "Oct 30"},
+                        {"category": "Oct 31"},
+                        {"category": "Nov 1"},
+                        {"category": "Nov 2"},
+                        {"category": "Nov 3"},
+                        {"category": "Nov 4"},
+                        {"category": "Nov 5"},
+                        {"category": "Nov 6"},
+                        {"category": "Nov 7"},
+                        {"category": "Nov 8"},
+                        {"category": "Nov 9"}
+                    ]);
+                }
+                document.getElementById("rallies").onclick = function() {
+                    makeChart([{"category": "Oct 1","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 2","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 3","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 4","column-1": 98.9,"column-2": 1.1},
+                        {"category": "Oct 5","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 6","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 7","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 8","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 9","column-1": 98.9,"column-2": 1.1},
+                        {"category": "Oct 10","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 11","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 12","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 13","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 14","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 15","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 16","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 17","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 18","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 19","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 20","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 21","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 22","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 23","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 24","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 25","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 26","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 27","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 28"},
+                        {"category": "Oct 29"},
+                        {"category": "Oct 30"},
+                        {"category": "Oct 31"},
+                        {"category": "Nov 1"},
+                        {"category": "Nov 2"},
+                        {"category": "Nov 3"},
+                        {"category": "Nov 4"},
+                        {"category": "Nov 5"},
+                        {"category": "Nov 6"},
+                        {"category": "Nov 7"},
+                        {"category": "Nov 8"},
+                        {"category": "Nov 9"}
+                    ]);
+                }
+                document.getElementById("lawnsigns").onclick = function() {
+                    makeChart([{"category": "Oct 1","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 2","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 3","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 4","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 5","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 6","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 7","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 8","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 9","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 10","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 11","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 12","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 13","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 14","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 15","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 16","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 17","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 18","column-1": 99.1,"column-2": 0.9},
+                        {"category": "Oct 19","column-1": 99.0,"column-2": 1.0},
+                        {"category": "Oct 20","column-1": 99.2,"column-2": 0.8},
+                        {"category": "Oct 21","column-1": 99.3,"column-2": 0.7},
+                        {"category": "Oct 22","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 23","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 24","column-1": 99.4,"column-2": 0.6},
+                        {"category": "Oct 25","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 26","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 27","column-1": 99.5,"column-2": 0.5},
+                        {"category": "Oct 28"},
+                        {"category": "Oct 29"},
+                        {"category": "Oct 30"},
+                        {"category": "Oct 31"},
+                        {"category": "Nov 1"},
+                        {"category": "Nov 2"},
+                        {"category": "Nov 3"},
+                        {"category": "Nov 4"},
+                        {"category": "Nov 5"},
+                        {"category": "Nov 6"},
+                        {"category": "Nov 7"},
+                        {"category": "Nov 8"},
+                        {"category": "Nov 9"}
+                    ]);
+                }
+                document.getElementById("sources").onclick = function() {
+                    makeChart([{"category": "Oct 1","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 2","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 3","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 4","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 5","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 6","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 7","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 8","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 9","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 10","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 11","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 12","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 13","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 14","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 15","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 16","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 17","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 18","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 19","column-1": 99.6,"column-2": 0.4},
+                        {"category": "Oct 20","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 21","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 22","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 23","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 24","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 25","column-1": 99.7,"column-2": 0.3},
+                        {"category": "Oct 26","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 27","column-1": 99.8,"column-2": 0.2},
+                        {"category": "Oct 28"},
+                        {"category": "Oct 29"},
+                        {"category": "Oct 30"},
+                        {"category": "Oct 31"},
+                        {"category": "Nov 1"},
+                        {"category": "Nov 2"},
+                        {"category": "Nov 3"},
+                        {"category": "Nov 4"},
+                        {"category": "Nov 5"},
+                        {"category": "Nov 6"},
+                        {"category": "Nov 7"},
+                        {"category": "Nov 8"},
+                        {"category": "Nov 9"}
+                    ]);
+                }
+            }
+            var chart;
+            function makeChart(data) {
+                AmCharts.makeChart("chartdiv", {
+                    "type": "serial",
+                    "fontFamily": "Open-Sans",
+                    "fontSize": 14,
+                    "categoryField": "category",
+                    "autoMarginOffset": 30,
+                    "axisThickness": 3,
+                    "sequencedAnimation": false,
+                    "colors": [
+                        "#BE0025",
+                        "#26048D",
+                        "#eea638",
+                        "#a7a737",
+                        "#86a965",
+                        "#8aabb0",
+                        "#69c8ff",
+                        "#cfd27e",
+                        "#9d9888",
+                        "#916b8a",
+                        "#724887",
+                        "#7256bc"
+                    ],
+                    "startDuration": 1,
+                    "theme": "light",
+                    "categoryAxis": {
+                        "gridPosition": "middle",
+                        "axisThickness": 0,
+                        "tickLength": 0
+                    },
+                    "marginLeft": 0,
+                    "graphs": [
+                        {
+                            "balloonText": "[[title]] of [[category]]:[[value]]",
+                            "bullet": "none",
+                            "lineThickness": 3,
+                            "id": "AmGraph-1",
+                            "title": "Trump",
+                            "valueField": "column-1"
+                        },
+                        {
+                            "balloonText": "[[title]] of [[category]]:[[value]]",
+                            "bullet": "none",
+                            "lineThickness": 3,
+                            "id": "AmGraph-2",
+                            "title": "Hillary",
+                            "valueField": "column-2"
+                        }
+                    ],
+                    "valueAxes": [
+                        {
+                            "axisTitleOffset": 0,
+                            "id": "ValueAxis-1",
+                            "maximum": 100,
+                            "minimum": 0,
+                            "autoGridCount": false,
+                            "offset": 4,
+                            "title": "Axis title",
+                            "titleFontSize": 0
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "enabled": true,
+                        "useGraphSettings": true
+                    },
+//                    "titles": [
+//                        {
+//                            "alpha": 0.75,
+//                            "id": "Title-1",
+//                            "size": 20,
+//                            "text": "Chances of Winning Presidency"
+//                        }
+//                    ],
+                    "dataProvider": data,
+                });
+            }
+		</script>
+	</head>
+    <body>
+        <header>
+            <h1>Bill Mitchell Models</h1>
+        </header>
+        <h2>Chances of Winning Presidency</h2>
+        <div class="model-section">
+            <div id="models">
+                <h3>Model</h3>
+                <div id="models-flex">
+                    <p><input id="masks" name="model" type="radio" checked>Halloween Masks</p>
+                    <p><input id="rallies" name="model" type="radio">Crowd Size</p>
+                    <p><input id="lawnsigns" name="model" type="radio">Lawn Signs</p>
+                    <p><input id="sources" name="model" type="radio">Bill's Sources</p>
+                </div>
+            </div>
+            <div id="chartdiv" ></div>
+        </div>
+        <div class="methodology">
+            <h2>Methodology</h2>
+            <p>We use only the most rigorous, empirically proven formulas for who wins will win the presidency. Specifically, we only use the models proposed by the once-in-a-generation mind of Bill Mitchell.</p>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Always heard that yard signs were a great measure of who was really winning.  Now that Trump is dominating that, no longer matters. <a href="https://twitter.com/hashtag/smh?src=hash">#smh</a></p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/783790905027362816">October 5, 2016</a></blockquote>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">The media is funny.  They swear a sample of 500 in a poll hand-picked by Liberals represents 250 million but a crowd of 30k means nothing.</p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/789788705246576640">October 22, 2016</a></blockquote>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I have sources on the ground in OH.  Trump is way ahead there.  Trust me.</p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/789645204609433600">October 22, 2016</a></blockquote>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Halloween mask sales have predicted every Presidential winner since 1980.  Right now, Trump masks lead Hillary by 30%.</p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/789657498341040128">October 22, 2016</a></blockquote>
+            <p>A number of liberal Hi-liar-y pollsters like Nate Cohn and Micah Cohen have tried to make fun of Bill, but he's stood up to them.</p>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">In the spirit of Halloween and knowing how predictive mask sales are of election results, I finally have my costume! <a href="https://t.co/IPoTk3wbsC">pic.twitter.com/IPoTk3wbsC</a></p>&mdash; (((Harry Enten))) (@ForecasterEnten) <a href="https://twitter.com/ForecasterEnten/status/790324449258119172">October 23, 2016</a></blockquote>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Clinton has an advantage in every model, except Bill Mitchell&#39;s Halloween costumes indicator <a href="https://twitter.com/jackhealyNYT">@jackhealyNYT</a> <a href="https://t.co/RX3aB0W4rs">pic.twitter.com/RX3aB0W4rs</a></p>&mdash; Nate Cohn (@Nate_Cohn) <a href="https://twitter.com/Nate_Cohn/status/790311588913745920">October 23, 2016</a></blockquote>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I&#39;m not the one who made costumes 100% accurate since 1980. <a href="https://t.co/0jmmh8CsBl">https://t.co/0jmmh8CsBl</a></p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/790628616665174016">October 24, 2016</a></blockquote>
+            <p>Why listen to him, not the polls? Because the polls can't be trusted. They use oversampling to skew polls, and <a href="http://www.pewresearch.org/fact-tank/2016/10/25/oversampling-is-used-to-study-small-groups-not-bias-poll-results/">oversampling is definitely what Bill says it is.</a></p>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Imagine polls don&#39;t exist.  Show me evidence Hillary is winning?</p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/762497721831874561">August 8, 2016</a></blockquote>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Does oversampling Democrat matter?  Trump won Independents in the YouGov poll by 15 points yet LOST THE POLL!!!</p>&mdash; Bill Mitchell (@mitchellvii) <a href="https://twitter.com/mitchellvii/status/785478125920583680">October 10, 2016</a></blockquote>
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <p class="footer">If I've missed any of Bill's methodological means of prediction, exemplary tweets by him, or liberal frauds trying to attack him, please email me those links at <a href="matilto:models@billmitchellmodels.com">models@billmitchellmodels.com</a>.</p>
+    </body>
+</html>

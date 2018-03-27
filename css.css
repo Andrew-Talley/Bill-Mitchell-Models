@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Baskerville, sans-serif;
+    position: relative;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.textBox {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+.masks {
+    position: relative;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    border-bottom: solid 2px #000;
+    z-index: 2;
+    width: 100%;
+    height: 12.5vh;
+    background-color: #9B001E;
+}
+
+#canvas-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#models {
+    box-sizing: border-box;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    height: 100%;
+    flex-grow: 0;
+    border-right: 1px solid #666;
+    height: 450px;
+}
+
+#models p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#models-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#models-flex div {
+    padding: 0 10px;
+}
+
+#chartdiv {
+    min-width: 50%;
+    height: 450px; 
+    background-color: #fff;
+    position: relative;
+    flex-grow: 2;
+}
+
+.model-section {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: 900;
+}
+
+.methodology {
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 840px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tweet-div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer {
+    font-size: .7em;
+    text-align: center;
+    color: #666;
+}
+
+@media all and (max-width: 800px) {
+    .model-section {
+        flex-direction: column;
+    }
+    #models {
+        border-bottom: 1px solid #666;
+        border-right: none;
+        width: 100%;
+        height: auto;
+        font-size: .8em;
+    }
+    #models h3 {
+        font-size: 1.4em;
+    }
+}
